@@ -17,7 +17,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start', 'help'])
 async def send_welcome(message: types.Message):
     markup = types.ReplyKeyboardMarkup()
-    markup.add(types.KeyboardButton('Открыть сайт', web_app=WebAppInfo(url='')))
+    markup.add(types.KeyboardButton('Открыть сайт', web_app=WebAppInfo(url='https://github.com/n1ghtcrawller/KeyBasicsNeutral')))
     await message.answer("Hello.", reply_markup=markup)
 
 
